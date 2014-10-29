@@ -1,0 +1,425 @@
+      <LinearLayout 
+    
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <RelativeLayout 
+        android:id="@+id/main_signup"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#2c2c2c"
+      
+        > 
+        <LinearLayout 
+            android:id="@+id/main_form_header"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/header"
+            android:layout_alignParentTop="true"
+            >
+            <LinearLayout 
+                 android:id="@+id/lay_text_cancel"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:layout_weight="1"  
+              android:orientation="vertical"
+                
+                >
+                <TextView 
+                      android:id="@+id/text_cancel"	
+                      android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:text="CANCEL"
+                     android:textSize="17dp"
+                     android:textColor="#dc5100"
+                     android:gravity="center_vertical|left"
+                     android:paddingLeft="10dp"
+                      
+                      
+                      />
+                
+                
+                
+            </LinearLayout>
+             <LinearLayout 
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:layout_weight="1"  
+              android:orientation="vertical"
+              
+                
+                >
+                 <TextView
+                     android:id="@+id/text_FORM"
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:text="FORM"
+                     android:textSize="20dp"
+                     android:textColor="#fff"
+                     android:gravity="center_vertical|center"
+                     
+                     
+                      />
+                 
+                 
+             </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/lay_text_done" 
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:layout_weight="1"  
+              android:orientation="vertical"
+                
+                >
+                  <TextView 
+                      android:id="@+id/text_done"	
+                      android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:text="DONE"
+                     android:textSize="17dp"
+                     android:textColor="#dc5100"
+                     android:gravity="center_vertical|right"
+                     android:paddingRight="10dp"
+                      
+                      
+                      />
+                  
+              </LinearLayout>
+             </LinearLayout>
+             <ScrollView 
+                 android:id="@+id/scrolll_main"
+                 android:layout_below="@+id/main_form_header"
+                 android:layout_above="@+id/add_layout"
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:fillViewport="true"
+                 >
+        
+             <RelativeLayout 
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                
+                 android:orientation="vertical"
+                 >
+                   <LinearLayout 
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                
+                 android:orientation="vertical"
+                 >
+                 
+                        <View 
+                      android:layout_height="1dp"
+                      android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                      android:background="#1e1e1e"
+                      />
+                 <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                  
+                    android:background="#383838"
+                    
+                    
+                     >
+                     
+                      <LinearLayout 
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:layout_weight="1"
+                           android:orientation="vertical"
+                           
+                           ></LinearLayout>      
+                            <LinearLayout 
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:layout_weight="1"
+                           android:orientation="vertical"
+                           android:gravity="center_vertical|center"
+                           android:background="@drawable/header"
+                           >
+                                <TextView 
+                                    android:id="@+id/job_title_form"
+                                    android:background="#383838"
+                                  
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:hint="Job title"
+                                    android:textSize="20dp"
+                                    android:textColor="#fff"
+                                    >
+                                    
+                                </TextView>
+                                
+                            </LinearLayout>      
+                            <LinearLayout 
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:layout_weight="1"
+                           android:orientation="vertical"
+                           android:gravity="center_vertical|right"
+                           android:paddingRight="10dp"
+                           
+                           >
+                                 <TextView 
+                                     android:id="@+id/time_date"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Job title"
+                                    android:textSize="15dp"
+                                    android:textColor="#fff"
+                                    />
+                                
+                            </LinearLayout>      
+                     
+                 </LinearLayout>
+              <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                
+                                android:background="@drawable/line_side"
+                                />
+                       <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/line_side"
+                                />
+                   <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                  android:background="#383838"
+                    android:orientation="vertical"
+                   
+                     >  
+                           
+                     
+                             
+                       <EditText 
+                           android:id="@+id/account_name"
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:hint="Account Name"
+                           android:textColor="#fff"
+                           android:textSize="18dp"
+                           android:paddingLeft="10dp"
+                            android:background="@drawable/header"
+                            android:singleLine="true"
+                           />
+                   </LinearLayout>
+<ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                      
+                       android:background="@drawable/line_side" />
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                       android:background="@drawable/line_side" />
+                    
+                           
+
+                     <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                    
+                     >
+                         
+                           <EditText 
+                           android:id="@+id/contact_name"
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:hint="Contact Name"
+                           android:textColor="#fff"
+                           android:textSize="18dp"
+                             android:paddingLeft="10dp"
+                           android:background="@drawable/header"
+                           android:singleLine="true"
+                           />
+                         
+                        
+                           
+                     </LinearLayout>
+                          <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/line_side"
+                                />
+                          <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/line_side"
+                                />
+                          
+                       <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                     android:background="#383838"
+                     >
+                             <EditText 
+                           android:id="@+id/from_phone"
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:hint="Phone"
+                           android:textColor="#fff"
+                           android:textSize="18dp"
+                             android:paddingLeft="10dp"
+                            android:background="@drawable/header"
+                            android:singleLine="true"
+                            android:inputType="phone"
+                           
+                           />
+                           
+                           
+                       </LinearLayout>
+                       <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/line_side"
+                                />
+                          <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                 android:layout_marginTop="10dp"
+                                android:background="@drawable/line_side"
+                                />
+                         <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                       android:background="#383838"
+                       android:orientation="vertical"
+                   
+                     >
+                            <EditText 
+                           android:id="@+id/source_form"
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:hint="Source"
+                           android:textColor="#fff"
+                           android:textSize="18dp"
+                             android:paddingLeft="10dp"
+                         android:background="@drawable/header"
+                         android:singleLine="true"
+                           
+                           />  
+                             
+                             
+                         </LinearLayout>
+                         <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/line_side"
+                                />
+                         <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/line_side"
+                                 android:layout_marginTop="10dp"
+                                />
+                           <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                   
+                     >
+                            
+                            <EditText 
+                           android:id="@+id/form_rate"
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:hint="Rate"
+                           android:textColor="#fff"
+                           android:textSize="18dp"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/header"
+                            android:singleLine="true"
+                           
+                           />  
+                               
+                               
+                               
+                           </LinearLayout>
+                           <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/line_side"
+                                />
+                            <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/line_side"
+                                android:layout_marginTop="10dp"
+                                />
+                             <LinearLayout 
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="#383838"
+                     
+                     >
+                                  <EditText 
+                           android:id="@+id/form_rate2"
+                           android:layout_height="match_parent"
+                           android:layout_width="match_parent"
+                           android:hint="2nd Rate"
+                           android:textColor="#fff"
+                           android:textSize="18dp"
+                             android:paddingLeft="10dp"
+                            android:background="@drawable/header"
+                           android:singleLine="true"
+                           />  
+                                 
+                             </LinearLayout>
+                       <ImageView 
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/line_side"
+                                />
+
+                       <LinearLayout
+                           android:id="@+id/addition_layout"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical" >
+                       </LinearLayout>
+
+                   </LinearLayout>
+                 
+             </RelativeLayout>
+             
+             
+   
+     </ScrollView>
+        
+        <LinearLayout 
+            android:id="@+id/add_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center|right"
+            >
+            <ImageView 
+                android:id="@+id/add_layout1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/add_button"
+                />
+        </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>

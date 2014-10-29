@@ -1,0 +1,106 @@
+<LinearLayout 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    
+    
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#2c2c2c"
+        
+        
+        >
+        <LinearLayout 
+            android:id="@+id/header_playsound"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/header"
+            
+            
+            >
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                
+                >
+                <TextView 
+                    android:id="@+id/back_playsound"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="BACK"
+                    android:textSize="15dp"
+                    android:textColor="#dc5100"
+                    
+                    />
+                
+                
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                
+                >
+                <TextView 
+                    android:id="@+id/voicenote_playsound"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="VOICE NOTE"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                
+                ></LinearLayout>
+            
+        </LinearLayout> 
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#1e1e1e"
+            
+            />
+        
+        <LinearLayout 
+            android:id="@+id/paly_playsound"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center"
+            
+            >
+            <ImageView 
+                android:id="@+id/playbutton_playsound"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/play_button"
+                
+                />
+            <ImageView 
+                android:id="@+id/playbutton_pausesound"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/pause_button"
+                android:visibility="gone"
+                />
+            
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>
